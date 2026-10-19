@@ -1,0 +1,9 @@
+# Exact versions used to produce the report figures and results.json (Python 3.13.16)
+numpy==2.5.3
+scipy==1.18.1
+mne==1.13.2
+PyWavelets==1.10.0
+matplotlib==3.11.2
+# tests and coverage only
+pytest==8.4.2
+coverage==7.16.2

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eeg-a01"
+version = "1.0.0"
+description = "CMP9780 A01: EEG signal analysis and digital filter design"
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "mne", "PyWavelets", "matplotlib"]
+
+[project.scripts]
+eeg-a01 = "eeg_a01.cli:main"
+
+[tool.setuptools]
+packages = ["eeg_a01"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
